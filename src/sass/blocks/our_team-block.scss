@@ -4,10 +4,12 @@
     padding: 35px 20px 35px;
 
     &__list {
+      @include centering_in_column;
       list-style: none;
     }
 
     &__item {
+      max-width: 280px;
       text-align: start;
     }
 
@@ -89,11 +91,13 @@
 
     &__list {
       display: flex;
+      flex-wrap: wrap;
       column-gap: 25px;
       list-style: none;
     }
 
     &__item {
+max-width: 227.08px;
       text-align: start;
     }
 
@@ -168,15 +172,17 @@
 @media (min-width: 1025px) {
 
   .ourteam-block {
-    padding: 112px 167px 112px;
+    padding: 114px 177px;
 
     &__list {
       display: flex;
+      flex-wrap: wrap;
       column-gap: 25px;
       list-style: none;
     }
 
     &__item {
+      max-width: 270px;
       text-align: start;
     }
 

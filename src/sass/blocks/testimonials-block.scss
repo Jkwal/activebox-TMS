@@ -15,6 +15,8 @@
     }
 
     &__quote {
+      max-width: 320px;
+      margin: 0 auto;
       padding: 24px 0 100px;
 
       background-color: #5C3249;
@@ -78,13 +80,16 @@
 
     &__quote {
       width: 51%;
-      padding: 62px 5px 45px 88px;
 
       display: flex;
       flex-direction: column;
 
 
       background-color: #5C3249;
+    }
+
+    &__quote > blockquote{
+      margin: 62px 0 0 88px;
     }
 
     &__text {
@@ -102,8 +107,8 @@
     }
 
     &__author {
-      width: 62%;
-      margin: 16px 0px 0 0;
+      width:84%;
+      margin: 16px 0 0 0;
 
       font-weight: 700;
       font-size: 12px;
@@ -146,13 +151,15 @@
 
     &__quote {
       width: 51%;
-      padding: 133px 5px 45px 128px;
 
       display: flex;
       flex-direction: column;
 
-
       background-color: #5C3249;
+    }
+
+    &__quote > blockquote{
+      margin: 133px 0 0 128px;
     }
 
     &__text {
@@ -170,8 +177,8 @@
     }
 
     &__author {
-      width: 45%;
-      margin: 24px 0px 0 0;
+      width: 70%;
+      margin: 24px 0 0 0;
 
       font-weight: 700;
       font-size: 13px;

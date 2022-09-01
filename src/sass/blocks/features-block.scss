@@ -5,6 +5,7 @@
   @include centering_in_column;
 
   &__item {
+    max-width: 280px;
     position: relative;
     padding-top: 103px;
     margin-top: 49px;
