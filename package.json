@@ -1,25 +1,22 @@
 {
-  "name": "activebox-vial",
+  "name": "ip-address-tracker-master",
   "version": "1.0.0",
-  "description": "Проект Вяля Евгения",
-  "source": "src/index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-
+  "main": "index.js",
+  "homepage": "https://jkwal.github.io/activebox-TMS",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --out-dir=build --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jkwal/activebox-Vial.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jkwal/activebox-Vial/issues"
-  },
-  "homepage": "https://github.com/Jkwal/activebox-Vial#readme",
   "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0",
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
     "sass": "^1.54.7"
